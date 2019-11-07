@@ -19,9 +19,12 @@ If you find joy in the simple things like using a tool that you created, learnin
 
 ## Command Line Shortcuts
 ###### _This is obviously not a comprehensive keyboard shortcut doc. This section is meant to highlight my favorite shortcuts & shortcut combinations that I use everyday and think aren't obviously beneficial after a quick glance at some documentation._
-#### <kbd>^</kbd><kbd>A</kbd> + <kbd>^</kbd><kbd>K</kbd> : Erase an entire line in the terminal.
-#### <kbd>^</kbd><kbd>R</kbd> : This shortcut searches your command history to match the characters you type after the command.   
-- Usage: Press <kbd>^</kbd><kbd>R</kbd>, start typing a command, press <kbd>^</kbd><kbd>R</kbd> again to start scrolling through previous commands that partially match what you've typed or simply press <kbd>ENTER</kbd> if the first command that comes up is the one you want.
+
+| Shortcuts |
+| ------------- |
+|<br> <kbd>^</kbd><kbd>A</kbd> + <kbd>^</kbd><kbd>K</kbd> : <b>Erase an entire line in the terminal.</b> <br><br>|
+|<br> <kbd>^</kbd><kbd>R</kbd> : <b>This shortcut searches your command history to match the characters you type after the command.</b> <br><br>_Usage: Press <kbd>^</kbd><kbd>R</kbd>, start typing a command, press <kbd>^</kbd><kbd>R</kbd> again to start scrolling through previous commands that partially match what you've typed or simply press <kbd>ENTER</kbd> if the first command that comes up is the one you want._ <br><br>|
+|<br> <kbd>^</kbd><kbd>X</kbd> + <kbd>^</kbd><kbd>E</kbd> : <b>Opens a text editor to easily type longer terminal commands.</b><br><br>_Usage: After you save & close the text editor file, the command will appear in the terminal & you can simply press <kbd>ENTER</kbd> to run the command._<br><br><b>NOTE:</b> _In my opinon, this isn't wildly helpful with the default text editor but check out the **[Shell Essentials](#shell-essentials)** section of this README to see how to make this shortcut much better by having it open VSCode instead._ <br><br>|
 
 
 ## Helpful Commands
@@ -36,6 +39,13 @@ If you find joy in the simple things like using a tool that you created, learnin
 ###### _To preface this section, I don't use the default shell that ships with MacOS/Linux and opt for the <b>zsh</b> shell along with [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh.git) which is a framework that helps you manage zsh configurations (note: oh-my-zsh also lets you utilize several awesome plugins)._
 
 <b>Important:</b> ZSH and Oh-My-Zsh are prequisites for a lot of tips in this repository. Follow the instructions [here](https://github.com/robbyrussell/oh-my-zsh.git) if you want to live a better life with a better shell. 
+#### Make Visual Studio your default text editor
+_This is great for many reasons._
+1. Make sure the VisualStudio command `code` (which launches VisualStudio from the terminal) is in your path. This can be done by adding the following text to your _<b>.zshrc</b>_ file. (Remember to open a new terminal window after saving this file)
+  * `export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"`
+2. Change your default text editor by adding the following to your _<b>.zshrc</b>_ file.
+  * `export EDITOR="code -w"`
+3. Open a new terminal window (in order for the changes to take effect) and try the keyboard shortcut <kbd>^</kbd><kbd>X</kbd> + <kbd>^</kbd><kbd>E</kbd> which should now open a temporary file in VisualStudio instead of vim or nano.
 
 ## Personal Organization Tips
 
