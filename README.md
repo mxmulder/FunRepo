@@ -33,7 +33,7 @@ If you find joy in the simple things like using a tool that you created, learnin
 | ------------- | ------------- | ------------- |
 | `ls -ltr`  | View folders & files sorted by modification time where the bottom-most file/folder was modified most recently   |_Great for sorting through directories with a lot of log files & for finding newly downloaded files/folders_|
 | `cd -` | `cd` with the `-` argument brings you to the last directory that you visited before the current working directory. | _This is very helpful when hopping back and forth between two different directories_|
-||||
+| `open .` | Opens the MacOS Finder from the current directory | Using the command line for everything is pretty alpha but sometimes the Finder makes things so much easier ¯\\_(ツ)\_/¯. _(I honestly felt embarrased the first time I found out this extremely simple yet helpful command)_  |
 
 ## Shell Essentials
 ###### _To preface this section, I don't use the default shell that ships with MacOS/Linux and opt for the <b>zsh</b> shell along with [Oh-My-Zsh](https://github.com/robbyrussell/oh-my-zsh.git) which is a framework that helps you manage zsh configurations (note: oh-my-zsh also lets you utilize several awesome plugins)._
@@ -56,10 +56,12 @@ _This is great for many reasons._
 ## Picked Projects
 
 ## MacOS Fun
-#### Guides
-#### Products
+### Guides & Commands
+- <b>Hide all files on Desktop _(toggle to true to have them be visible again)_</b><br>
+`defaults write com.apple.finder CreateDesktop -bool false;killall Finder`
+### Products
 - [Magnet](https://apps.apple.com/us/app/magnet/id441258766?mt=12): _Efficiently control how much space each application takes on your monitor. Amazing for multitasking. ($1.99)_
-#### Free Tools
+### Free Tools
 ## VisualStudio
 
 
